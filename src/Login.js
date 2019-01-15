@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import { v4 as uuid } from "uuid";
-import { parse as parseQuery, stringify as stringifyQuery } from "query-string";
+import { stringify as stringifyQuery } from "query-string";
 const config = {
-  base_url:'https://accounts-dev.fortellis.io/login',
-  client_id: '0oa1brlomw2oYaemj2p7'
+  base_url:'https://accounts.fortellis.io/login',
+  client_id: '63St7B7UqT3lFztb83gY3Q5NocrvvUVu'
 };
 
 const getLoginAppURL = function({
@@ -16,7 +16,7 @@ const getLoginAppURL = function({
   const query = {
     client_id,
     response_type: "token id_token",
-    scope: "openid email profile user_details",
+    scope: "openid email profile roles",
     redirect_uri: 'http://localhost:3000',
     state: `${protocol}//${host}`,
     nonce: uuid(),
