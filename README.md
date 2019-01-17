@@ -3,7 +3,7 @@ This is a simple react application with a login and logout button demonstrating 
 To run the App
 
 * `npm install`
-    config.json file can be changed with respective clientId and login base url
+*   config.json file can be changed with respective clientId and login base url
 * `npm start`
 
 
