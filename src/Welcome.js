@@ -38,10 +38,10 @@ class Welcome extends Component {
         return (
             
             <div style={{padding: '50px'}}>
-                <Card style={{'text-align': 'center', 'background-color': '#d8e9f1'}}>
+                <Card style={{'textAlign': 'center', 'backgroundColor': '#d8e9f1'}}>
                     <LayoutGrid nested >
                         <LayoutGridCell style={{padding: '10px'}}span={2}>
-                            <div style={{'padding-bottom': '10px'}}hidden= {!this.state.authenticated}>Welcome to Fortellis: {this.state.username}</div>
+                            <div style={{'paddingBottom': '10px'}}hidden= {!this.state.authenticated}>Welcome to Fortellis: {this.state.username}</div>
                             <Button hidden= {this.state.authenticated} onClick={this.login} >LOGIN</Button>
                             <Button  hidden= {!this.state.authenticated} onClick={this.logout} >LOGOUT</Button>
                         </LayoutGridCell>

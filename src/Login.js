@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { v4 as uuid } from "uuid";
 import { stringify as stringifyQuery } from "query-string";
-const config = {
-  base_url:'https://accounts.fortellis.io/login',
-  client_id: '63St7B7UqT3lFztb83gY3Q5NocrvvUVu'
-};
+import config from './config.json'
 
 const getLoginAppURL = function({
   location = window.location,
@@ -17,7 +14,7 @@ const getLoginAppURL = function({
     client_id,
     response_type: "token id_token",
     scope: "openid email profile roles",
-    redirect_uri: 'http://localhost:3000',
+    redirect_uri: config.redirect_url,
     state: `${protocol}//${host}`,
     nonce: uuid(),
     response_mode: "fragment",
@@ -29,6 +26,7 @@ const getLoginAppURL = function({
 };
 
 class Login extends Component {
+  
   componentDidMount() {
     window.location = getLoginAppURL({ config });
   }

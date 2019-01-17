@@ -1,0 +1,5 @@
+{
+    "client_id" : "63St7B7UqT3lFztb83gY3Q5NocrvvUVu",
+    "base_url" : "https://accounts.fortellis.io/login",
+    "redirect_url" : "http://localhost:3000"
+}
