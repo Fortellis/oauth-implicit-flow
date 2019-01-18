@@ -8,7 +8,7 @@ To run the App
 *   config.json file can be changed with respective clientId and login base url
 * `npm start`
 
-**login base url -** Login base url is added as a Callback URL while registering the app with Fortellis. Registration form contains Callback URL (optional) field. 
-
 Open http://localhost:3000 to view it in the browser.
+
+**login base url -** Login base url is added as a Callback URL while registering the app with Fortellis. Registration form contains Callback URL (optional) field. 
 
