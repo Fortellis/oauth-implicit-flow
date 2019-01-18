@@ -12,3 +12,4 @@ Open http://localhost:3000 to view it in the browser.
 
 **login base url -** Login base url is added as a Callback URL while registering the app with Fortellis. Registration form contains Callback URL (optional) field. 
 
+**clientId -** Client ID is the API Key which can be found in Specifications for the registered App on Fortellis Developer Network App
